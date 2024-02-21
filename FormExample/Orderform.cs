@@ -116,5 +116,12 @@ namespace FormExample
                 lblPrice.Text = "The Price is : " + price;
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmMenu formMenu = new frmMenu();
+            formMenu.Show();
+            this.Hide();
+        }
     }
 }

@@ -67,5 +67,12 @@ namespace FormExample
             multiply = num1 / num2;
             lblAnswer.Text = "The answer is: " + multiply;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmMenu formM = new frmMenu();
+            formM.Show();
+            this.Hide();
+        }
     }
 }

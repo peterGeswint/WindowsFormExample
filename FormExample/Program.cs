@@ -16,7 +16,7 @@ namespace FormExample
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Orderform());
+            Application.Run(new frmMenu());
         }
     }
 }

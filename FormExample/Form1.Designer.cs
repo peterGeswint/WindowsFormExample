@@ -37,15 +37,17 @@
             this.btnSubtract = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
             this.btnMultiply = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(424, 39);
+            this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.Location = new System.Drawing.Point(487, 39);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(142, 31);
+            this.btnSend.Size = new System.Drawing.Size(79, 31);
             this.btnSend.TabIndex = 0;
-            this.btnSend.Text = "Add";
+            this.btnSend.Text = "+";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
@@ -94,39 +96,54 @@
             // 
             // btnSubtract
             // 
-            this.btnSubtract.Location = new System.Drawing.Point(424, 90);
+            this.btnSubtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubtract.Location = new System.Drawing.Point(487, 90);
             this.btnSubtract.Name = "btnSubtract";
-            this.btnSubtract.Size = new System.Drawing.Size(142, 32);
+            this.btnSubtract.Size = new System.Drawing.Size(79, 32);
             this.btnSubtract.TabIndex = 6;
-            this.btnSubtract.Text = "Subtract";
+            this.btnSubtract.Text = "-";
             this.btnSubtract.UseVisualStyleBackColor = true;
             this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
             // 
             // btnDivide
             // 
-            this.btnDivide.Location = new System.Drawing.Point(424, 140);
+            this.btnDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDivide.Location = new System.Drawing.Point(487, 140);
             this.btnDivide.Name = "btnDivide";
-            this.btnDivide.Size = new System.Drawing.Size(142, 32);
+            this.btnDivide.Size = new System.Drawing.Size(79, 32);
             this.btnDivide.TabIndex = 7;
-            this.btnDivide.Text = "Devide";
+            this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
             this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
             // btnMultiply
             // 
-            this.btnMultiply.Location = new System.Drawing.Point(424, 187);
+            this.btnMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMultiply.Location = new System.Drawing.Point(487, 187);
             this.btnMultiply.Name = "btnMultiply";
-            this.btnMultiply.Size = new System.Drawing.Size(142, 32);
+            this.btnMultiply.Size = new System.Drawing.Size(79, 32);
             this.btnMultiply.TabIndex = 8;
-            this.btnMultiply.Text = "Multiply";
+            this.btnMultiply.Text = "X";
             this.btnMultiply.UseVisualStyleBackColor = true;
             this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(103, 217);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(119, 31);
+            this.btnBack.TabIndex = 9;
+            this.btnBack.Text = "Go Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 260);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnSubtract);
@@ -155,6 +172,7 @@
         private System.Windows.Forms.Button btnSubtract;
         private System.Windows.Forms.Button btnDivide;
         private System.Windows.Forms.Button btnMultiply;
+        private System.Windows.Forms.Button btnBack;
     }
 }
 
